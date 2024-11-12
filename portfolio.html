@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Kankekar - Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* Landing Page */
+        #landing {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        #landing h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #landing p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #444;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #555;
+        }
+
+        /* Section Headings */
+        h2 {
+            font-size: 2em;
+            margin: 20px 0;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Skills Section */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills li {
+            padding: 5px 0;
+            font-size: 1.1em;
+        }
+
+        /* Project Section */
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        /* Contact Section */
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <div class="container">
+            <h1>Hi, I’m Saurabh Kankekar</h1>
+            <p>Business Technology Consultant and ServiceNow Developer</p>
+            <p>Experienced in end-to-end ServiceNow development, third-party integrations, data-driven insights, and process optimization.</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="button">Explore My Work</a>
+                <a href="#contact" class="button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a Business Technology Consultant with expertise in ServiceNow development and complex integrations. Currently, I'm pursuing a Master’s in Business Analytics at UC Davis, where I’m enhancing my skills in data analytics and decision-making. My journey in tech has been fueled by a passion for leveraging analytics to drive impactful solutions.</p>
+        <p>When I'm not working, I enjoy exploring predictive analytics and staying updated on technology trends.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, Python</li>
+            <li><strong>Cloud Technology:</strong> AWS</li>
+            <li><strong>Data Structures & Algorithms:</strong> Arrays, Stacks, Trees, and more</li>
+            <li><strong>Databases:</strong> SQL, NoSQL</li>
+            <li><strong>ServiceNow Expertise:</strong> Scripting, dashboards, lifecycle events, workflows</li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>ServiceNow Integrations</h3>
+            <p>Implemented complex integrations for Deloitte, streamlining processes and improving efficiency.</p>
+        </div>
+        <div class="project">
+            <h3>Olympic Games Analysis and Prediction</h3>
+            <p>Data analysis project focusing on predictive modeling, leveraging historical data to forecast Olympic performances.</p>
+        </div>
+        <div class="project">
+            <h3>Team Leadership</h3>
+            <p>Led a team through testing cycles and daily scrum calls, enhancing collaboration and project outcomes.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container">
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <h3>Consultant at Deloitte Consulting Pvt Ltd</h3>
+            <p>Aug 2021 – Jul 2024 | Mumbai, India</p>
+            <ul>
+                <li>Developed end-to-end ServiceNow solutions, optimizing client operations.</li>
+                <li>Led a team of seven through project cycles, ensuring successful deliverables.</li>
+                <li>Enhanced workflows, case management, and knowledge management systems.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>If you’re interested in learning more about my work or collaborating, feel free to reach out!</p>
+        <form action="mailto:skankekar@ucdavis.edu" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input 
