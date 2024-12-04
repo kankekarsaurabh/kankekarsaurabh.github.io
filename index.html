@@ -89,6 +89,29 @@
             margin: 10px 0;
         }
 
+        /* Gallery styling */
+        .gallery {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery .description {
+            width: 300px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #bcbcbc;
+            margin-top: 5px;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -107,7 +130,7 @@
 </head>
 <body>
     <header>
-        <img src="image.jpg" alt="Saurabh Kankekar">
+        <img src="image.png" alt="Saurabh Kankekar">
         <h1>Saurabh Sanjay Kankekar</h1>
         <p>(650) 201-8807 | <a href="mailto:skankekar@ucdavis.edu">skankekar@ucdavis.edu</a> | San Francisco, CA</p>
         <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
@@ -115,37 +138,36 @@
 
     <div class="container">
         <section>
-            <h2>Profile</h2>
-            <p>Aspiring Data Enthusiast and Master of Science in Business Analytics candidate at UC Davis with a background as a Consultant specializing in Software Development Lifecycle (SDLC). Experienced in leading technical teams and implementing complex integrations, enhancing operational efficiency. Skilled in data analysis and visualization, aiming to leverage analytical expertise and project leadership to drive data-driven decision-making in a data science role.</p>
-        </section>
+            <h2>Projects</h2>
+            <h3>SQL and Data Visualization Project</h3>
+            <p>Analyzed air quality data to uncover key trends, correlations, and insights. Developed dashboards to answer eight business questions using SQL queries and Python visualizations.</p>
+            <div class="gallery">
+                <div>
+                    <img src="air_quality_intro.png" alt="Air Quality Introduction">
+                    <p class="description">Project Introduction - Air Quality Trends</p>
+                </div>
+                <div>
+                    <img src="air_quality_insight.png" alt="Insight on NOx Levels">
+                    <p class="description">Insights on NOx Levels During Traffic Hours</p>
+                </div>
+                <div>
+                    <img src="air_quality_seasonal.png" alt="Seasonal Patterns">
+                    <p class="description">Seasonal Variations in Air Pollutants</p>
+                </div>
+            </div>
 
-        <section>
-            <h2>Specialties & Technologies</h2>
-            <ul>
-                <li><strong>Specialties:</strong> Exploratory Data Analysis, Statistical Exploration, Data Visualization, Machine Learning, Experimental Design</li>
-                <li><strong>Technologies:</strong> R, SQL, Python, Tableau, Power BI, CSS, JavaScript</li>
-                <li><strong>Certifications:</strong> CSA (ServiceNow)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li><strong>University of California, Davis:</strong> Master of Science in Business Analytics (Expected Jul. 2025) - San Francisco, CA</li>
-                <li><strong>D.G. Ruparel College, Mumbai:</strong> Master of Science in Computer Science (Oct. 2020) - Mumbai, IND (2nd Rank Holder)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Professional Experience</h2>
-            <h3>Deloitte (Aug. 2021 – Jul. 2024)</h3>
-            <p>Served as the technical lead in developing the Leave of Absence (LOA) process area, a solution adopted by 170,000 Deloitte employees, significantly improving process efficiency and scalability.</p>
-            <ul>
-                <li>Developed five complex integrations with third-party tools, streamlining workflows and enhancing operational efficiency.</li>
-                <li>Parsed and managed diverse datasets to ensure accurate data handling and system functionality.</li>
-                <li>Led a team of seven through multiple testing cycles, achieving a 100% issue resolution rate.</li>
-                <li>Designed comprehensive reports and dashboards, delivering actionable insights to stakeholders.</li>
-            </ul>
+            <h3>Twitter Data Pipeline</h3>
+            <p>Built a data pipeline to extract, process, and store Twitter data using Airflow, AWS S3, and Python libraries (Tweepy, Pandas). Leveraged ETL workflows for data analysis.</p>
+            <div class="gallery">
+                <div>
+                    <img src="twitter_pipeline_overview.png" alt="Twitter Pipeline Overview">
+                    <p class="description">Pipeline Overview</p>
+                </div>
+                <div>
+                    <img src="twitter_data_storage.png" alt="Data Storage in S3">
+                    <p class="description">Processed Data Stored in AWS S3</p>
+                </div>
+            </div>
         </section>
     </div>
 
