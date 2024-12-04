@@ -25,9 +25,16 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
         header h1 {
-            margin: 0;
-            font-size: 2.8em;
+            margin: 10px 0 0;
+            font-size: 2.5em;
             font-weight: bold;
         }
 
@@ -81,6 +88,20 @@
             margin: 10px 0;
         }
 
+        /* Placeholder images */
+        .image-row {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-row img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -92,19 +113,14 @@
             margin-top: 40px;
         }
 
-        /* Links */
-        .contact a {
-            color: #f4b400;
-            text-decoration: none;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="image.png" alt="Saurabh Kankekar">
         <h1>Saurabh Sanjay Kankekar</h1>
         <p>(650) 201-8807 | <a href="mailto:skankekar@ucdavis.edu">skankekar@ucdavis.edu</a> | San Francisco, CA</p>
         <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
@@ -158,6 +174,15 @@
                 <li>Built a Twitter data pipeline using Airflow, Tweepy, and AWS S3 to extract, process, and store data.</li>
                 <li>Leveraged Python and Pandas for ETL workflows and data analysis.</li>
             </ul>
+        </section>
+
+        <section>
+            <h2>Gallery</h2>
+            <div class="image-row">
+                <img src="https://via.placeholder.com/300" alt="Project Image 1">
+                <img src="https://via.placeholder.com/300" alt="Project Image 2">
+                <img src="https://via.placeholder.com/300" alt="Project Image 3">
+            </div>
         </section>
     </div>
 
